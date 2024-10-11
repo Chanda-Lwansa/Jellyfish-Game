@@ -1,0 +1,314 @@
+
+html{
+    font-family: 'Hind', sans-serif; 
+}
+
+body{
+    animation-name: backgroundColorChange;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;}
+@keyframes backgroundColorChange {
+    0% {
+      background: rgb(200, 243, 255);
+    }
+    25% {
+      background: #377da0;
+    }
+    50% {
+      background: #207579;
+    }
+    75% {
+      background: #15565c;
+    }
+    100% {
+      background: #475a74;
+    }
+  }
+
+.font{
+    color: rgb(255, 255, 33);
+}
+
+.grid{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 6.25rem 6.25rem 6.25rem 6.25rem 6.25rem 6.25rem;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 100px;
+    background-color: rgb(116, 177, 191);
+    position: absolute;
+    margin: auto;
+}
+
+.item0{
+    justify-self: center;
+    padding-top: 40px;
+}
+
+.font{
+    grid-column: 1/ span 3;
+    grid-row: 1;
+    font-size: 1.5rem;
+}
+
+.item1{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.item2{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.item3{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.item4{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.click:hover{
+    opacity: 0%;
+}
+
+.item5{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.item6{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+.item7{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.item8{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.item9{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.item10{
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.item11{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.item12{
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.item13{
+    grid-column: 1;
+    grid-row:6;
+}
+
+.item14{
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.item15{
+    grid-column:3;
+    grid-row:6;
+}
+
+.item16{
+    grid-column:1;
+    grid-row:7;
+}
+
+.item17{
+    grid-column:2;
+    grid-row:7;
+}
+
+.item18{
+    grid-column:3;
+    grid-row:7;
+}
+
+.item19{
+    grid-column:1;
+    grid-row:8;
+}
+
+.item20{
+    grid-column:2;
+    grid-row:8;
+}
+
+.item21{
+    grid-column:3;
+    grid-row:8;
+}
+
+.button{
+    border: none;
+    background-color: antiquewhite;
+    height: 50px; 
+    width: 80px;
+    border-radius: 15px;
+}
+
+.button:hover{
+    background-color: yellow;
+}
+
+.winningGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(116, 177, 191);
+    max-height: 750px;
+    width: auto;
+    place-items: center;
+}
+
+.itemZero{
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 6rem;
+    font-weight: bold;
+    color:rgb(255, 255, 33);
+    padding: 60px;
+    animation: color-change 1s infinite;
+}
+
+  @keyframes color-change {
+    0% { color: rgb(255, 255, 33); }
+    50% { color: rgb(86, 23, 63); }
+    100% { color: rgb(255, 255, 33); }
+  }
+
+.item{
+    grid-column: 1/ span 3;
+    grid-row:3;
+    justify-self: center;
+}
+
+.itemOne{
+    grid-column: 1;
+    grid-row: 1;
+}
+.itemTwo{
+    grid-column: 2;
+    grid-row:1;
+}
+.itemThree{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+@media only screen and (max-width:765px){
+    .itemOne{
+        display: none;
+    }
+    .itemTwo{
+        display: none;
+    }
+    .itemThree{
+        display: none;
+    }
+    .itemZero{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+    }
+    .winningGrid{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .item{
+        grid-column: 1;
+        grid-row: 2;
+        
+        
+    }
+}
+
+.title{
+    color: yellow;
+    font-size: 100px;
+    animation: color-changetitle 2s infinite;
+}
+
+@keyframes color-changetitle {
+    0% { color: rgb(255, 255, 33); }
+    50% { color: rgb(86, 23, 63); }
+    100% { color: rgb(255, 255, 33); }
+  }
+
+.title:hover{
+    color: pink;
+    transition: color 0.5s ease-out 0.5s;
+}
+
+.titleContainer{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.creator{
+    font-size: 40px;
+    color: pink;
+}
+
+.play{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.playButton{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(240, 192, 129);
+    height: 150px;
+    width:300px;
+    font-size: 2rem;
+    color: rgb(60, 19, 33);
+    font-weight: bold;
+}
+
+.playButton:hover{
+    width: 350px;
+    transition: width 0.5s ease-out 0.5s;
+}
+
+
+.homeGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.instructions{
+    color: rgb(255, 255, 33);
+    animation: color-changetitle 2s infinite;
+    font-weight: bold;
+}
